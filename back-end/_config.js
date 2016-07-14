@@ -1,7 +1,7 @@
 module.exports = {
   // App Settings
-  MONGO_URI: process.env.MONGO_URI || 'localhost',
-  TOKEN_SECRET: process.env.TOKEN_SECRET || 'relogio123',
+  MONGO_URI: process.env.MONGO_URI || 'mongodb://abacate:fodase@brasileleicoes.com.br:27017/test',
+  TOKEN_SECRET: process.env.TOKEN_SECRET || 'testinha',
 
   // OAuth 2.0
   FACEBOOK_SECRET: process.env.FACEBOOK_SECRET || '70dd44661c529c141430675db0f070a5',

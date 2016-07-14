@@ -39,6 +39,13 @@ var userSchema = new mongoose.Schema({
   twitch: String
 });
 
+var votoSchema = new mongoose.Schema({
+  facebookId: String,
+  nome: String,
+  cidade: String,
+  candidato: Object
+});
+
 userSchema.pre('save', function(next) {
   var user = this;
   if (!user.isModified('password')) {
@@ -59,6 +66,7 @@ userSchema.methods.comparePassword = function(password, done) {
 };
 
 var User = mongoose.model('User', userSchema);
+var Voto = mongoose.model('Voto', votoSchema);
 
 mongoose.connect(config.MONGO_URI);
 mongoose.connection.on('error', function(err) {
@@ -67,7 +75,7 @@ mongoose.connection.on('error', function(err) {
 
 var app = express();
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3010);
 app.use(cors());
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -105,6 +113,7 @@ function ensureAuthenticated(req, res, next) {
     return res.status(401).send({ message: 'Token has expired' });
   }
   req.user = payload.sub;
+  req.payload = payload;
   next();
 }
 
@@ -122,6 +131,86 @@ function createJWT(user) {
   };
   return jwt.encode(payload, config.TOKEN_SECRET);
 }
+
+app.get('/', function(req, res) {
+  res.send("Olá mundo! :-)");
+});
+
+/*
+ |--------------------------------------------------------------------------
+ | GET /voto/validar
+ |--------------------------------------------------------------------------
+ */
+ app.get('/voto/validar', ensureAuthenticated, function(req, res) {
+
+  if(req.payload.data.facebook) {
+    Voto.findOne({facebookId: req.payload.data.facebook}, function(err, voto) {
+
+      if(voto) {
+        res.send({message: "ja_votou", voto: voto});
+      } else {
+        res.send({message: "nao_votou", voto: false});
+      }
+    });
+  } else {
+    res.status(500).send({ message: "Usuário inválido." });
+  }
+
+ });
+
+/*
+ |--------------------------------------------------------------------------
+ | GET /voto/ranking
+ |--------------------------------------------------------------------------
+ */
+ app.get('/voto/ranking', function(req, res) {
+
+  if(req.query.cidade) {
+    Voto.find({cidade: req.query.cidade}, function(err, votos) {
+      res.send(votos);
+    });
+  } else {
+    res.status(500).send({ message: "Cidade inválida." });
+
+  }
+
+  // res.send(req.body.cidade);
+ });
+
+/*
+ |--------------------------------------------------------------------------
+ | POST /voto/salvar
+ |--------------------------------------------------------------------------
+ */
+ app.post('/voto/salvar', ensureAuthenticated, function(req, res) {
+
+  if(req.payload.data.facebook) {
+    Voto.findOne({facebookId: req.payload.data.facebook}, function(err, voto) {
+
+      if(voto) {
+        res.status(500).send({ message: "Usuário já votou." });
+      } else {
+
+        var voto = new Voto({
+          facebookId: req.body.user.facebook,
+          nome: req.body.user.displayName,
+          cidade: req.body.user.cidade,
+          candidato: req.body.candidato
+        });
+
+        voto.save(function(err, result) {
+          if (err) {
+            res.status(500).send({ message: err.message });
+          }
+          res.send({ voto: result });
+        });
+      }
+    });
+  } else {
+    res.status(500).send({ message: "Usuário inválido." });
+  }
+
+ });
 
 /*
  |--------------------------------------------------------------------------

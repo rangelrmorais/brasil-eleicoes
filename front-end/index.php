@@ -7,10 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="Vamos acompanhar em tempo real os nossos pré-candidatos a prefeitura do Brasil? Vamos.">
+    <?php if(!empty($_GET['candidato'])) : ?>
+        <meta property="og:title" content="Eu votei no <?php echo $_GET['candidato']; ?>! E você, vai votar em quem?"/>
+        <meta name="description" content="Acompanhe os nossos pré-candidatos a prefeitura do Brasil!">
+    <?php else : ?>
+        <meta property="og:title" content="Brasil Eleições"/>
+        <meta name="description" content="Vamos acompanhar em tempo real os nossos pré-candidatos a prefeitura do Brasil? Vamos.">
+    <?php endif; ?>
+
     <meta property="og:site_name" content="Brasil Eleições"/>
     <meta name="author" content="Luiz Almeida">
-    <meta property="og:title" content="Brasil Eleições"/>
     <meta property="og:image" content="http://1.bp.blogspot.com/-W7Gk-uAODOU/VD8QS8ZTxZI/AAAAAAAAGwM/aPZpqixk944/s1600/tropa%2Bde%2Belite.png" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary" />
@@ -156,7 +162,7 @@
 
                     </div>
 
-                        <div ng-show="currentUser.cidade">
+                        <div ng-show="currentUser.cidade && !currentUser.candidato">
                             <h3>Qual será o seu candidato?</h3>
 
                             <div class="list-group">
@@ -167,47 +173,37 @@
                             </div>
                         </div>
 
+                        <div ng-show="currentUser.candidato">
+                        <!-- <div> -->
+                            <h3>Obrigado pelo voto!</h3>
+
+                            <div class="table-responsive">
+                                <table class="table text-center">
+                                    <thead>
+                                        <tr style="font-size: 18px;">
+                                            <th>Candidato</th>
+                                            <th>Partido</th>
+                                            <th>Total de Votos até agora</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="font-size: 20px;" ng-repeat="voto in ranking | orderObjectBy: 'total':true">
+                                            <td><span class="label label-default">{{voto.nome}}</span></td>
+                                            <td><span class="label label-default">{{voto.partido}}</span></td>
+                                            <td><span class="label label-success">{{voto.total}} votos</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <a ng-href="https://www.facebook.com/sharer/sharer.php?u=http://brasileleicoes.com.br/?candidato={{ currentUser.candidato.nome | escape }}" target="_blank" class="btn btn-block btn-success btn-lg" style="background: #446CB3; border: none;"><i class="fa fa-share"></i> Compartilhar meu voto no Facebook</a>
+
+                        </div>
+
 
                         <a href="#" ng-click="logout()" class="btn btn-default pull-right" style="margin-top: 40px;">Desconectar</a>
                     </div>
 
-                    <!-- <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
-                            </div>
-                        </div>
-                    </form> -->
                 </div>
             </div>
         </div>

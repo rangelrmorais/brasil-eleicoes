@@ -1,22 +1,22 @@
 {
   "Rio de Janeiro": [
-     {"nome": "Romário", "partido": "PSB", "cargo": "Prefeito"}
-    ,{"nome": "Indio da Costa", "partido": "PSD", "cargo": "Prefeito"}
-    ,{"nome": "Marcelo Freixo", "partido": "PSOL", "cargo": "Prefeito"}
-    ,{"nome": "Flávio Bolsonaro", "partido": "PSC", "cargo": "Prefeito"}
-    ,{"nome": "Pedro Paulo", "partido": "PMDB", "cargo": "Prefeito"}
-    ,{"nome": "Marcelo Crivella", "partido": "PRB", "cargo": "Prefeito"}
-    ,{"nome": "Alessandro Molon", "partido": "Rede", "cargo": "Prefeito"}
-    ,{"nome": "Jandira Feghali", "partido": "PC do B", "cargo": "Prefeito"}
+     {"cidade": "Rio de Janeiro", "nome": "Romário", "partido": "PSB", "cargo": "Prefeito"}
+    ,{"cidade": "Rio de Janeiro", "nome": "Indio da Costa", "partido": "PSD", "cargo": "Prefeito"}
+    ,{"cidade": "Rio de Janeiro", "nome": "Marcelo Freixo", "partido": "PSOL", "cargo": "Prefeito"}
+    ,{"cidade": "Rio de Janeiro", "nome": "Flávio Bolsonaro", "partido": "PSC", "cargo": "Prefeito"}
+    ,{"cidade": "Rio de Janeiro", "nome": "Pedro Paulo", "partido": "PMDB", "cargo": "Prefeito"}
+    ,{"cidade": "Rio de Janeiro", "nome": "Marcelo Crivella", "partido": "PRB", "cargo": "Prefeito"}
+    ,{"cidade": "Rio de Janeiro", "nome": "Alessandro Molon", "partido": "Rede", "cargo": "Prefeito"}
+    ,{"cidade": "Rio de Janeiro", "nome": "Jandira Feghali", "partido": "PC do B", "cargo": "Prefeito"}
   ],
   "São Paulo": [
-     {"nome": "João Doria", "partido": "PSB", "cargo": "Prefeito"}
-    ,{"nome": "Andrea Matarazzo", "partido": "PSD", "cargo": "Prefeito"}
-    ,{"nome": "Marta Suplicy", "partido": "PSOL", "cargo": "Prefeito"}
-    ,{"nome": "Marco Feliciano", "partido": "PSC", "cargo": "Prefeito"}
-    ,{"nome": "Luiza Erundina", "partido": "PMDB", "cargo": "Prefeito"}
-    ,{"nome": "Laércio Benko", "partido": "PRB", "cargo": "Prefeito"}
-    ,{"nome": "Major Olímpio", "partido": "Rede", "cargo": "Prefeito"}
-    ,{"nome": "Ricardo Young", "partido": "PC do B", "cargo": "Prefeito"}
+     {"cidade": "São Paulo", "nome": "João Doria", "partido": "PSB", "cargo": "Prefeito"}
+    ,{"cidade": "São Paulo", "nome": "Andrea Matarazzo", "partido": "PSD", "cargo": "Prefeito"}
+    ,{"cidade": "São Paulo", "nome": "Marta Suplicy", "partido": "PSOL", "cargo": "Prefeito"}
+    ,{"cidade": "São Paulo", "nome": "Marco Feliciano", "partido": "PSC", "cargo": "Prefeito"}
+    ,{"cidade": "São Paulo", "nome": "Luiza Erundina", "partido": "PMDB", "cargo": "Prefeito"}
+    ,{"cidade": "São Paulo", "nome": "Laércio Benko", "partido": "PRB", "cargo": "Prefeito"}
+    ,{"cidade": "São Paulo", "nome": "Major Olímpio", "partido": "Rede", "cargo": "Prefeito"}
+    ,{"cidade": "São Paulo", "nome": "Ricardo Young", "partido": "PC do B", "cargo": "Prefeito"}
   ]
 }
