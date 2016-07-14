@@ -4,16 +4,7 @@ angular.module("brasilEleicoes", ["satellizer"])
 
   $authProvider.facebook({
     clientId: '106178243154175',
-    name: 'facebook',
-    url: 'http://brasileleicoes.com.br:3010/auth/facebook',
-    authorizationEndpoint: 'https://www.facebook.com/v2.5/dialog/oauth',
-    redirectUri: window.location.origin + '/',
-    requiredUrlParams: ['display', 'scope'],
-    scope: ['email'],
-    scopeDelimiter: ',',
-    display: 'popup',
-    type: '2.0',
-    popupOptions: { width: 580, height: 400 }
+    url: 'http://brasileleicoes.com.br:3010/auth/facebook'
   });
 
 }])

@@ -503,7 +503,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
             defaults = utils.merge(options, defaults);
             var defer = $q.defer();
 
-            $timeout(function () {
+            // $timeout(function () {
               var url;
               var openPopup;
               var stateName = defaults.name + '_state';
@@ -543,7 +543,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
                 }, function (err) {
                   defer.reject(err);
                 });
-            });
+            // });
 
             return defer.promise;
           };

@@ -80,10 +80,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#sobre">Sobre</a>
+                        <a href="#participe">Participe Já</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#participe">Participe Já</a>
+                        <a href="#sobre">Sobre</a>
                     </li>
                 </ul>
             </div>
@@ -107,30 +107,6 @@
             </div>
         </div>
     </header>
-
-    <!-- About Section -->
-    <section class="success" id="sobre">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Sobre</h2>
-                    <hr class="star-light amarelo">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <p>Você assim como qualquer brasileiro provavelmente não acredita no governo brasileiro e no que ele diz. Também não acredita nas urnas eletrônicas.</p>
-                    <p>Na história da democracia brasileira tivemos diversos casos de possíveis fraudações eleitoriais que foram abafadas pela mídia.</p>
-                    <p>Você assim como eu quer saber REALMENTE quem está em alta?</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center page-scroll">
-                    <a href="#participe" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Participe Já!
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section id="participe">
@@ -175,9 +151,9 @@
 
                         <div ng-show="currentUser.candidato">
                         <!-- <div> -->
-                            <h3>Obrigado pelo voto!</h3>
+                            <h3>Obrigado! Compartilhe seu voto para ver o Ranking</h3>
 
-                            <div class="table-responsive">
+                            <div class="table-responsive" ng-if="compartilhou">
                                 <table class="table text-center">
                                     <thead>
                                         <tr style="font-size: 18px;">
@@ -196,7 +172,7 @@
                                 </table>
                             </div>
 
-                            <a ng-href="https://www.facebook.com/sharer/sharer.php?u=http://brasileleicoes.com.br/?candidato={{ currentUser.candidato.nome | escape }}" target="_blank" class="btn btn-block btn-success btn-lg" style="background: #446CB3; border: none;"><i class="fa fa-share"></i> Compartilhar meu voto no Facebook</a>
+                            <a ng-href="https://www.facebook.com/sharer/sharer.php?u=http://brasileleicoes.com.br/?candidato={{ currentUser.candidato.nome | escape }}" target="_blank" ng-click="compartilhou = true" class="btn btn-block btn-success btn-lg" style="background: #446CB3; border: none;"><i class="fa fa-share"></i> Compartilhar meu voto no Facebook</a>
 
                         </div>
 
@@ -204,6 +180,30 @@
                         <a href="#" ng-click="logout()" class="btn btn-default pull-right" style="margin-top: 40px;">Desconectar</a>
                     </div>
 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Sobre</h2>
+                    <hr class="star-light amarelo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p>Você assim como qualquer brasileiro provavelmente não acredita no governo brasileiro e no que ele diz. Também não acredita nas urnas eletrônicas.</p>
+                    <p>Na história da democracia brasileira tivemos diversos casos de possíveis fraudações eleitoriais que foram abafadas pela mídia.</p>
+                    <p>Você assim como eu quer saber REALMENTE quem está em alta?</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center page-scroll">
+                    <a href="#participe" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Participe Já!
+                    </a>
                 </div>
             </div>
         </div>
@@ -242,7 +242,7 @@
     <script src="js/freelancer.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="bower_components/satellizer/satellizer.min.js"></script>
+    <script src="bower_components/satellizer/satellizer.js"></script>
     <script src="js/app.js"></script>
 
     <script type="text/javascript">stLight.options({publisher: "3f4ae795-5514-43d8-8427-134afdaf094a", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
