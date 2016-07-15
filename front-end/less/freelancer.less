@@ -52,6 +52,10 @@ hr.star-primary:after {
 
 hr.star-light {
     border-color: white;
+
+    &.amarelo:after {
+    	background: #F7CA18 !important;
+    }
 }
 
 hr.star-light:after {
@@ -61,6 +65,11 @@ hr.star-light:after {
 
 hr.star-primary {
     border-color: @theme-primary;
+
+  &.amarelo:after {		
+		background: #F7CA18 !important;		
+		color: #FFF !important;		
+	}
 }
 
 hr.star-primary:after {
@@ -74,7 +83,7 @@ hr.star-primary:after {
 
 header {
 	text-align: center;
-	background: @theme-success;
+	background: @theme-home;
 	color: white;
 	.container {
 		padding-top: 100px;
@@ -474,3 +483,22 @@ footer {
     	display: none;
     }
 }
+
+.github-link {
+	display: block;
+	position: absolute;
+	bottom: -149px;
+	right: 0px;
+}
+
+@media(max-width:767px) {
+  .sobre-content {
+		padding: 0 60px;
+	}
+
+	#ads {
+		display: none;
+	}
+}
+
+
