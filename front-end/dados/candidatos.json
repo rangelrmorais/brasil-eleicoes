@@ -7,8 +7,8 @@
     ,{"cidade": "Belo Horizonte", "nome": "Marcelo Álvaro Antônio", "partido": "PR", "cargo": "Prefeito"}
     ,{"cidade": "Belo Horizonte", "nome": "Maria da Consolação", "partido": "PSOL", "cargo": "Prefeito"}
     ,{"cidade": "Belo Horizonte", "nome": "Mário Henrique Caixa", "partido": "PV", "cargo": "Prefeito"}
-    ,{"cidade": "Belo Horizonte", "nome": "Sargento Rodrigues", "partido": "PDT", "cargo": "Prefeito"}
     ,{"cidade": "Belo Horizonte", "nome": "Reginaldo Lopes", "partido": "PT", "cargo": "Prefeito"}
+    ,{"cidade": "Belo Horizonte", "nome": "Sargento Rodrigues", "partido": "PDT", "cargo": "Prefeito"}
   ],
   "Rio de Janeiro": [
      {"cidade": "Rio de Janeiro", "nome": "Alessandro Molon", "partido": "Rede", "cargo": "Prefeito"}
