@@ -46,21 +46,27 @@
     <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
 
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-31493811-2', 'auto');
-  ga('send', 'pageview');
+      ga('create', 'UA-31493811-2', 'auto');
+      ga('send', 'pageview');
 
-</script>
+    </script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-9735122012959131",
+        enable_page_level_ads: true
+      });
+    </script>
 
 </head>
 
 <body id="page-top" class="index">
-
-<a href="https://github.com/lhas/eleicoes-reais" style="position: fixed; top: 70px; right: 0px;"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
@@ -90,6 +96,8 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
+
+        <a class="github-link" href="https://github.com/lhas/eleicoes-reais"><img style="border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
     </nav>
 
     <!-- Header -->
@@ -101,7 +109,7 @@
                     <div class="intro-text">
                         <span class="name">Brasil Eleições</span>
                         <hr class="star-light amarelo">
-                        <span class="skills">Vamos acompanhar em tempo real os nossos pré-candidatos a prefeitura do Brasil? Vamos.</span>
+                        <span class="skills">Vamos acompanhar em tempo real os nossos pré-candidatos às prefeituras do Brasil? Vamos!</span>
                     </div>
                 </div>
             </div>
@@ -117,6 +125,7 @@
                     <hr class="star-primary amarelo">
                 </div>
             </div>
+
             <div class="row" ng-controller="AuthCtrl">
                 <div class="col-lg-8 col-lg-offset-2">
 
@@ -182,6 +191,20 @@
 
                 </div>
             </div>
+
+            <div id="ads" class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Arranha céu - Brasil Eleiçoes -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:728px;height:90px"
+                         data-ad-client="ca-pub-9735122012959131"
+                         data-ad-slot="1822830808"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -195,8 +218,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <p>Você assim como qualquer brasileiro provavelmente não acredita no governo brasileiro e no que ele diz. Também não acredita nas urnas eletrônicas.</p>
+                <div class="col-lg-8 col-lg-offset-2 sobre-content">
+                    <p>Você provavelmente, assim como qualquer brasileiro, não acredita no governo brasileiro e no que ele diz. Também não acredita nas urnas eletrônicas.</p>
                     <p>Na história da democracia brasileira tivemos diversos casos de possíveis fraudações eleitoriais que foram abafadas pela mídia.</p>
                     <p>Você assim como eu quer saber REALMENTE quem está em alta?</p>
                 </div>
