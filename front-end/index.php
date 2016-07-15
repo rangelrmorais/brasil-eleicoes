@@ -101,7 +101,7 @@
                     <div class="intro-text">
                         <span class="name">Brasil Eleições</span>
                         <hr class="star-light amarelo">
-                        <span class="skills">Vamos acompanhar em tempo real os nossos pré-candidatos a prefeitura do Brasil? Vamos.</span>
+                        <span class="skills">Vamos acompanhar em tempo real os nossos pré-candidatos às prefeituras do Brasil? Vamos!</span>
                     </div>
                 </div>
             </div>
@@ -196,7 +196,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 sobre-content">
-                    <p>Você assim como qualquer brasileiro provavelmente não acredita no governo brasileiro e no que ele diz. Também não acredita nas urnas eletrônicas.</p>
+                    <p>Você provavelmente, assim como qualquer brasileiro, não acredita no governo brasileiro e no que ele diz. Também não acredita nas urnas eletrônicas.</p>
                     <p>Na história da democracia brasileira tivemos diversos casos de possíveis fraudações eleitoriais que foram abafadas pela mídia.</p>
                     <p>Você assim como eu quer saber REALMENTE quem está em alta?</p>
                 </div>
