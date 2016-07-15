@@ -1,22 +1,37 @@
 {
+  "Belo Horizonte": [
+     {"cidade": "Belo Horizonte", "nome": "Alexandre Kalil", "partido": "PHS", "cargo": "Prefeito"}
+    ,{"cidade": "Belo Horizonte", "nome": "Délio Malheiros", "partido": "PSD", "cargo": "Prefeito"}
+    ,{"cidade": "Belo Horizonte", "nome": "Doutor Boni", "partido": "PSC", "cargo": "Prefeito"}
+    ,{"cidade": "Belo Horizonte", "nome": "Eros Biondini", "partido": "PROS", "cargo": "Prefeito"}
+    ,{"cidade": "Belo Horizonte", "nome": "Marcelo Álvaro Antônio", "partido": "PR", "cargo": "Prefeito"}
+    ,{"cidade": "Belo Horizonte", "nome": "Maria da Consolação", "partido": "PSOL", "cargo": "Prefeito"}
+    ,{"cidade": "Belo Horizonte", "nome": "Mário Henrique Caixa", "partido": "PV", "cargo": "Prefeito"}
+    ,{"cidade": "Belo Horizonte", "nome": "Sargento Rodrigues", "partido": "PDT", "cargo": "Prefeito"}
+    ,{"cidade": "Belo Horizonte", "nome": "Reginaldo Lopes", "partido": "PT", "cargo": "Prefeito"}
+  ],
   "Rio de Janeiro": [
-     {"cidade": "Rio de Janeiro", "nome": "Romário", "partido": "PSB", "cargo": "Prefeito"}
-    ,{"cidade": "Rio de Janeiro", "nome": "Indio da Costa", "partido": "PSD", "cargo": "Prefeito"}
-    ,{"cidade": "Rio de Janeiro", "nome": "Marcelo Freixo", "partido": "PSOL", "cargo": "Prefeito"}
+     {"cidade": "Rio de Janeiro", "nome": "Alessandro Molon", "partido": "Rede", "cargo": "Prefeito"}
     ,{"cidade": "Rio de Janeiro", "nome": "Flávio Bolsonaro", "partido": "PSC", "cargo": "Prefeito"}
-    ,{"cidade": "Rio de Janeiro", "nome": "Pedro Paulo", "partido": "PMDB", "cargo": "Prefeito"}
-    ,{"cidade": "Rio de Janeiro", "nome": "Marcelo Crivella", "partido": "PRB", "cargo": "Prefeito"}
-    ,{"cidade": "Rio de Janeiro", "nome": "Alessandro Molon", "partido": "Rede", "cargo": "Prefeito"}
+    ,{"cidade": "Rio de Janeiro", "nome": "Indio da Costa", "partido": "PSD", "cargo": "Prefeito"}
     ,{"cidade": "Rio de Janeiro", "nome": "Jandira Feghali", "partido": "PC do B", "cargo": "Prefeito"}
+    ,{"cidade": "Rio de Janeiro", "nome": "Marcelo Crivella", "partido": "PRB", "cargo": "Prefeito"}
+    ,{"cidade": "Rio de Janeiro", "nome": "Marcelo Freixo", "partido": "PSOL", "cargo": "Prefeito"}
+    ,{"cidade": "Rio de Janeiro", "nome": "Pedro Paulo", "partido": "PMDB", "cargo": "Prefeito"}
+    ,{"cidade": "Rio de Janeiro", "nome": "Romário", "partido": "PSB", "cargo": "Prefeito"}
   ],
   "São Paulo": [
-     {"cidade": "São Paulo", "nome": "João Doria", "partido": "PSB", "cargo": "Prefeito"}
-    ,{"cidade": "São Paulo", "nome": "Andrea Matarazzo", "partido": "PSD", "cargo": "Prefeito"}
-    ,{"cidade": "São Paulo", "nome": "Marta Suplicy", "partido": "PMDB", "cargo": "Prefeito"}
-    ,{"cidade": "São Paulo", "nome": "Marco Feliciano", "partido": "PSC", "cargo": "Prefeito"}
-    ,{"cidade": "São Paulo", "nome": "Luiza Erundina", "partido": "PSOL", "cargo": "Prefeito"}
+     {"cidade": "São Paulo", "nome": "Andrea Matarazzo", "partido": "PSD", "cargo": "Prefeito"}
+    ,{"cidade": "São Paulo", "nome": "João Doria", "partido": "PSB", "cargo": "Prefeito"}
     ,{"cidade": "São Paulo", "nome": "Laércio Benko", "partido": "PRB", "cargo": "Prefeito"}
+    ,{"cidade": "São Paulo", "nome": "Luiza Erundina", "partido": "PMDB", "cargo": "Prefeito"}
     ,{"cidade": "São Paulo", "nome": "Major Olímpio", "partido": "Rede", "cargo": "Prefeito"}
+    ,{"cidade": "São Paulo", "nome": "Marco Feliciano", "partido": "PSC", "cargo": "Prefeito"}
+    ,{"cidade": "São Paulo", "nome": "Marta Suplicy", "partido": "PSOL", "cargo": "Prefeito"}
     ,{"cidade": "São Paulo", "nome": "Ricardo Young", "partido": "PC do B", "cargo": "Prefeito"}
+  ],
+  "Palmital": [
+    {"cidade": "Palmital", "nome": "José Roberto Ronqui", "partido": "PSD", "cargo": "Prefeito"}
+   ,{"cidade": "Palmital", "nome": "Professora Ismênia", "partido": "PSDB", "cargo": "Prefeito"}
   ]
 }
