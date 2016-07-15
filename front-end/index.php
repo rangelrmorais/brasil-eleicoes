@@ -46,15 +46,23 @@
     <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
 
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-31493811-2', 'auto');
-  ga('send', 'pageview');
+      ga('create', 'UA-31493811-2', 'auto');
+      ga('send', 'pageview');
 
-</script>
+    </script>
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-9735122012959131",
+        enable_page_level_ads: true
+      });
+    </script>
 
 </head>
 
@@ -117,6 +125,7 @@
                     <hr class="star-primary amarelo">
                 </div>
             </div>
+
             <div class="row" ng-controller="AuthCtrl">
                 <div class="col-lg-8 col-lg-offset-2">
 
@@ -180,6 +189,20 @@
                         <a href="#" ng-click="logout()" class="btn btn-default pull-right" style="margin-top: 40px;">Desconectar</a>
                     </div>
 
+                </div>
+            </div>
+
+            <div id="ads" class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Arranha céu - Brasil Eleiçoes -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:728px;height:90px"
+                         data-ad-client="ca-pub-9735122012959131"
+                         data-ad-slot="1822830808"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
             </div>
         </div>

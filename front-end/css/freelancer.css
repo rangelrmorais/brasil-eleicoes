@@ -520,4 +520,7 @@ fieldset[disabled] .btn-success.active {
   .sobre-content {
     padding: 0 60px;
   }
+  #ads {
+    display: none;
+  }
 }
